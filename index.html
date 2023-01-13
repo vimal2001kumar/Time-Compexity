@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="tc.css">
+</head>
+
+<body align="center" bgcolor="#F9F9F9">
+    <h1>Time Complexity Calculator</h1>
+
+    <div>
+        <label for="languageOption">Select Language: </label>
+        <select id="languageOption">
+            <option>Java</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>C#</option>
+            <option>Javascript</option>
+        </select>
+    </div>
+
+    <div>
+        <br><label for="codeInput"><h3>Enter code:</h3></label><br>
+    </div>
+    <div>
+        <textarea spellcheck="true" id="codeInput" rows=10 cols="80" placeholder="Write/paste your code here.."></textarea>
+    </div>
+
+    <div>
+        <br><button id="getBigOBtn">Calculate</button>
+    </div>
+
+    <div>
+        <h3>Output:</h3>
+        <div id="resultShow"></div>
+        <div id="codeAnalysis"></div>
+    </div>
+</body>
+<script src="tcAnalyze.js"></script>
+<script src="tc.js"></script>
+</html>
